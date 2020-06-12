@@ -1,17 +1,52 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --primary-text-color:#212121;
   --title-text-color: #000000;
   --accent-color: #2196F3;
   --secondary-color:#757575;
   --primary-white-color:#FFFFFF;
+  --font-text: 'Roboto', sans-serif;
+  --font-logo: 'Raleway',sans-serif;
 }
 
+/* ------------body-*-------------------- */
+body {
+  width: 1600px;
+  background-color:#e5e5e5;
+ }
+
+/* -----------------------end body------------------> */
+
+/* відключає стилі UL */
+.ul-style{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+/* --------------------- */
+
+
+
+
+
+
 /* logo */
+
+
 .logo {
 text-decoration:none ;
 color:var(--accent-color);
 text-decoration:none;
-font-family: Raleway;
+font-family:var(--font-logo);
 font-size: 26px;
 font-weight: bold;
 line-height: 1.19;
@@ -21,24 +56,36 @@ font-style: normal ;
 .logo > span{
 color:var(--title-text-color);
 }
+
+
 /* .logo-black {
 color:var(--title-text-color);
 } */
 
+
+
+
 /* site-nav */
+/* -----start   main navigation------------------------ */
 
 .site-nav .link.current{
   color:var(--accent-color);
 }
 
 .site-nav .link{
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   color:var(--main-color);
-  font-family: Roboto;
+
+  font-family:var(--font-text);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+ 
 }
 
 .site-nav .link:hover,
@@ -46,24 +93,83 @@ color:var(--title-text-color);
   color:var(--accent-color);
 }
 
+/* site-nav flex-navigator */
+.flex-navigator{
+display: flex;
+margin-left: 85px;
+}
+
+
+/* margin-right: 50px; */
+
+/* перший варіант */
+/* .flex-link:last-child{
+  margin-right:0px;
+} */
+
+
+/* другий варіант відступу */
+/* .flex-navigator .flex-link:not(:last-child) {
+  margin-right: 50px;
+} */
+
+/* thirth variant old school*/
+.flex-navigator .flex-link + .flex-link{
+  margin-left: 50px;
+}
+
+/* -----end main navigation------------------------ */
+
+
+
+
+
 
 /* address header */
+/* -------start address----- */
+
+.flex-nav{
+  display: flex;
+  align-items: center;
+}
 
 .address a {
-  text-decoration: none;
-  font-family: Roboto;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  color:var(--secondary-color);
+  
+  font-family:var(--font-text);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color:var(--secondary-color);
+  text-decoration: none;
 }
 
 .address a:hover,
 .address a:focus {
  color:var(--accent-color);
 }
+
+.for-margin{
+  display: flex;
+  margin-left: auto;
+}
+
+.flex-address{
+  display: flex;
+}
+
+.flex-address .link + .link{
+  margin-left: 50px;
+
+}
+
+/* ------finish address------------- */
+
 
 /* main section */
 /* banner */
@@ -110,11 +216,6 @@ color:var(--title-text-color);
 }
 /* --------------------- */
 
-/* відключає стилі UL */
-.ul-style{
-  list-style: none;
-}
-/* --------------------- */
 
 
 .subtitle{
@@ -288,3 +389,46 @@ background: var(--primary-text-color);
   letter-spacing: 0.03em;
   color: #FFFFFF;
  }
+
+
+
+/* -------------***flex***------------- */
+/* .container{
+  width:1200px;
+  background: blue;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+} */
+
+ /* .flex-nav {
+  box-sizing: border-box;
+  height: 80px;
+  background: tomato;
+}
+
+.flex-logo{
+ display: inline-block;
+ outline: 2px solid greenyellow;
+  
+} */
+
+
+
+
+
+
+/* 
+.flex-address{
+  display: inline-block;
+  background: violet;
+  margin: 0px;
+}
+
+.flex-address-link{
+  display: inline-block;
+  background: coral;
+}
+ */
