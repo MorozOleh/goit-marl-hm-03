@@ -1,0 +1,290 @@
+:root {
+  --primary-text-color:#212121;
+  --title-text-color: #000000;
+  --accent-color: #2196F3;
+  --secondary-color:#757575;
+  --primary-white-color:#FFFFFF;
+}
+
+/* logo */
+.logo {
+text-decoration:none ;
+color:var(--accent-color);
+text-decoration:none;
+font-family: Raleway;
+font-size: 26px;
+font-weight: bold;
+line-height: 1.19;
+font-style: normal ;
+}
+
+.logo > span{
+color:var(--title-text-color);
+}
+/* .logo-black {
+color:var(--title-text-color);
+} */
+
+/* site-nav */
+
+.site-nav .link.current{
+  color:var(--accent-color);
+}
+
+.site-nav .link{
+  color:var(--main-color);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color:var(--accent-color);
+}
+
+
+/* address header */
+
+.address a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color:var(--secondary-color);
+}
+
+.address a:hover,
+.address a:focus {
+ color:var(--accent-color);
+}
+
+/* main section */
+/* banner */
+
+.hero {
+  background: url("/Images/banner.jpg");
+  width: 1600px;
+  height: 600px;
+  font-family: Roboto;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: 0.06em;
+}
+
+.hero .hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36 ;
+  text-transform: uppercase;
+  color:var(--primary-white-color);
+}
+
+.hero .button {
+  background: var(--accent-color);
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-decoration: none;
+}
+
+/* section how it work */
+
+/* Стилі для H2*/
+.section-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em; 
+  color: var(--primary-text-color)
+}
+/* --------------------- */
+
+/* відключає стилі UL */
+.ul-style{
+  list-style: none;
+}
+/* --------------------- */
+
+
+.subtitle{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+
+.how-work{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+/* ----------------------------- */
+
+/* Чим ми займаємось */
+.name-work{
+  background: rgba(47, 48, 58, 0.8);
+  border-radius: 0px 0px 4px 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+   letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+/* -------------------------------- */
+
+/* Наша команда */
+.our-team {
+ font-family: Roboto;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.worker {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--primary-text-color);
+}
+
+.profession {
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+.icons{
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.icons:hover,
+.icons:focus{
+  color: var(--accent-color)
+}
+/* ----------------------- */
+
+
+/* постійні клієнти */
+.regular-custumers:hover,
+.regular-custumers:focus{
+  color: var(--accent-color);
+}
+/* -------------------------- */
+
+/* footer */
+.addres-street{
+font-family: Roboto;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71 ;
+letter-spacing: 0.03em;
+color: var(--primary-white-color);
+background: var(--primary-text-color);
+}
+/* ----------------------------------- */
+
+/* Join */
+.join{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: var(--primary-text-color);
+}
+/* ------------------------------------- */
+
+/* end */
+.end {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.4);
+  background: var(--primary-text-color);
+}
+/* ---------------------end index.html */
+
+
+
+/* start portfolio.html */
+/* portfolio */
+.button-radio{
+  background: #f5f4fa;
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.button-radio:hover,
+.button-radio:focus{
+  color: var(--accent-color);
+}
+
+
+ .name-post{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+ }
+
+
+ .post-about{
+   font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+
+ }
+
+ .kryak{
+  background: rgba(33, 150, 243, 0.9);;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+ }
