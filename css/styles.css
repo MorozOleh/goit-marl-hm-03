@@ -20,7 +20,7 @@ html {
 
 /* ------------body-*-------------------- */
 body {
-  width: 1600px;
+ 
   background-color:#e5e5e5;
  }
 
@@ -34,10 +34,29 @@ body {
 }
 /* --------------------- */
 
+h1,h2,h3,h4{
+margin: 0px;  
+}
 
 
 
 
+/* div/ container */
+
+.container {
+width: 1230px;
+margin-right: auto;
+margin-left: auto;
+padding-right: 15px;
+padding-left: 15px;
+outline: 2px solid red;
+background: yellow;
+
+}
+
+
+
+/* ------end / container */
 
 /* logo */
 
@@ -128,6 +147,8 @@ margin-left: 85px;
 /* address header */
 /* -------start address----- */
 
+
+
 .flex-nav{
   display: flex;
   align-items: center;
@@ -174,31 +195,53 @@ margin-left: 85px;
 /* main section */
 /* banner */
 
+
 .hero {
-  background: url("/Images/banner.jpg");
+
+  background: green;
   width: 1600px;
   height: 600px;
-  font-family: Roboto;
   text-align: center;
-  font-style: normal;
+  font-family:var(--font-text);
   letter-spacing: 0.06em;
+  font-style: normal;
+  color:var(--primary-white-color);
 }
 
-.hero .hero-title {
+.hero .title { 
+ 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36 ;
   text-transform: uppercase;
-  color:var(--primary-white-color);
+  
+  background: #757575;
+  
+  
+  
+  
 }
 
+
 .hero .button {
+  display: inline-block;
+  padding: 10px 32px;
+  margin-top: 30px;
+  border: 1px solid transparent;
+   color:var(--primary-white-color);
   background: var(--accent-color);
-  color: var(--primary-white-color);
-  font-weight: 700;
+    font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   text-decoration: none;
+  
+}
+
+
+.hero .button:hover,
+.hero .button:focus{
+  background:greenyellow;
+  color: brown;
 }
 
 /* section how it work */
