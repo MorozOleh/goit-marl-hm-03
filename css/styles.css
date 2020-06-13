@@ -580,13 +580,10 @@ background: var(--primary-text-color);
 
 .flex-button{
   display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
 }
 
-.flex-button.list {
-  
-  margin-left: 30px;
-  padding-top: 93px;
-}
 
 
 
