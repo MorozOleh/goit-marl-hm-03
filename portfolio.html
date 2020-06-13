@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -12,16 +12,14 @@
 
 <body>
   <header>
-    <!-- navigation -->
-    <!-- logo -->
+  
     <nav>
       <a href="./index.html" class="logo">
         Web
         <span> Studio </span>
          </a>
       
-         <!-------------------------  -->
-
+      
          
       <ul class="ul-style site-nav">
         <li><a class="link " href="index.html"> Студія </a></li>
@@ -38,67 +36,129 @@
       </address>
 
     </nav>
-  </header>
+  </header> -->
 
+<!DOCTYPE html>
+<html lang="ru"> 
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoIt-Markup-HW-3</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <header class="background-page">
+    <!---------------------------------- navigation ---------------------------------------->
+
+    <nav class=" container flex-nav">
+
+      <!------------------------------------- logo ------------------------------------------->
+      <a href="./index.html" class="logo">
+        Web
+        <span> Studio </span>
+      </a>
+
+      <!-- -----------------------------------end logo------------------------------------- -->
+
+      <!---------------------------------- main navigation ----------------------------------->
+
+      <ul class="ul-style site-nav flex-navigator">
+        <li class="flex-link"><a class="link" href="index.html"> Студія </a></li>
+        <li class="flex-link"><a class="link current" href="portfolio.html"> Портфоліо </a></li>
+        <li class="flex-link"><a class="link" href=""> Контакти </a></li>
+      </ul>
+
+      <!--------------------------------end main navigation---------------------------------  -->
+
+      <!---------------------------- address mail and phone ------------------------------------>
+      <address class="for-margin">
+        <ul class="ul-style address flex-address">
+          <li class="link"><a href="mailto:info@devstudio.com">
+              info@devstudio.com</a></li>
+          <li class="link"><a href="tel:+38096111111">
+              +38 096 111 11 11</a></li>
+        </ul>
+      </address>
+      <!-------------------------en----d address mail and phone----------------------------  -->
+    </nav>
+    <!-----------------------------------------end navigation----------------------------  -->
+  </header>
+  <!---------------------------------------end header------------------------------  -->
 
 
 
 
 
   <!-- main -->
-<h1>Портфоліо</h1>
+<h1 class="off">Портфоліо</h1>
 <section>
-  <ul class="ul-style">
-    <li><button href="" class="button-radio">Усе</button></li>
-    <li><button href="" class="button-radio">Веб-сайти</button></li>
-    <li><button href="" class="button-radio">Аплікації</button></li>
-    <li><button href="" class="button-radio">Дизайн</button></li>
-    <li><button href="" class="button-radio">Маркетинг</button></li>
-  </ul>
+
+<div class="container">
+    <ul class="ul-style flex-button">
+      <li class="list"><button href="" class="button-radio">Усе</button></li>
+      <li class="list"><button href="" class="button-radio">Веб-сайти</button></li>
+      <li class="list"><button href="" class="button-radio">Аплікації</button></li>
+      <li class="list"><button href="" class="button-radio">Дизайн</button></li>
+      <li class="list"><button href="" class="button-radio">Маркетинг</button></li>
+    </ul>
+
+</div>
+
 </section>
 
+
+
 <section>
-  <ul class="ul-style">
-    <li><a href=""><img src="./Images/technokryak.jpg" alt="technokryak" width="370" height="294" /></a>
-      <h2 class="name-post"> Технокряк </h2>
+
+<div class="container">
+    <ul class="ul-style flex-style">
+      <li class="list"><a href=""><img src="./Images/technokryak.jpg" alt="technokryak" width="370" height="294" /></a>
+        <h2 class="name-post"> Технокряк </h2>
         <p class="post-about"> Веб-Сайт </p>
-        <p class="kryak">Технокряк, це сучасна платформа розповсюдження короновірусу. 
+        <!-- <p class="kryak">Технокряк, це сучасна платформа розповсюдження короновірусу.
           Компанії використовують цю платформу для цифрового
-        шпіонажу і атак на захищені сервера конкурентів.</p>
-          </li>
-    <li><a href=""><img src="./Images/poster.jpg" alt="poster" width="370" height="294" /></a>
-      <h2 class="name-post"> Постер New Orlean vs Golden Star </h2>
+          шпіонажу і атак на захищені сервера конкурентів.</p> -->
+      </li>
+      <li class="list"><a href=""><img src="./Images/poster.jpg" alt="poster" width="370" height="294" /></a>
+        <h2 class="name-post"> Постер New Orlean vs Golden Star </h2>
         <p class="post-about"> Дизайн </p>
-          </li>
-    <li><a href=""><img src="./Images/seafood.jpg" alt="seafood" width="370" height="294" /></a>
-      <h2 class="name-post"> Ресторан Seafood </h2>
+      </li>
+      <li class="list"><a href=""><img src="./Images/seafood.jpg" alt="seafood" width="370" height="294" /></a>
+        <h2 class="name-post"> Ресторан Seafood </h2>
         <p class="post-about"> Аплікація </p>
-          </li>
-    <li><a href=""><img src="./Images/prime.jpg" alt="prime" width="370" height="294" /></a>
-      <h2 class="name-post"> Проект Prime </h2>
+      </li>
+      <li class="list"><a href=""><img src="./Images/prime.jpg" alt="prime" width="370" height="294" /></a>
+        <h2 class="name-post"> Проект Prime </h2>
         <p class="post-about"> Маркетинг </p>
-          </li>
-    <li><a href=""><img src="./Images/boxes.jpg" alt="boxes" width="370" height="294" /></a>
-      <h2 class="name-post"> Проект Boxes </h2>
+      </li>
+      <li class="list"><a href=""><img src="./Images/boxes.jpg" alt="boxes" width="370" height="294" /></a>
+        <h2 class="name-post"> Проект Boxes </h2>
         <p class="post-about"> Аплікація </p>
-          </li>
-    <li><a href=""><img src="./Images/inspiration.jpg" alt="inspiration" width="370" height="294" /></a>
-      <h2 class="name-post"> Inspiration has no Borders </h2>
+      </li>
+      <li class="list"><a href=""><img src="./Images/inspiration.jpg" alt="inspiration" width="370" height="294" /></a>
+        <h2 class="name-post"> Inspiration has no Borders </h2>
         <p class="post-about"> Веб-Сайт </p>
-          </li>
-    <li><a href=""><img src="./Images/limited.jpg" alt="limited" width="370" height="294" /></a>
-      <h2 class="name-post"> Видавництво  Limited Edition </h2>
+      </li>
+      <li class="list"><a href=""><img src="./Images/limited.jpg" alt="limited" width="370" height="294" /></a>
+        <h2 class="name-post"> Видавництво Limited Edition </h2>
         <p class="post-about"> Дизайн </p>
-          </li>
-    <li><a href=""><img src="./Images/lab.jpg" alt="lab" width="370" height="294" /></a>
-      <h2 class="name-post"> Проект LAB </h2>
+      </li>
+      <li class="list"><a href=""><img src="./Images/lab.jpg" alt="lab" width="370" height="294" /></a>
+        <h2 class="name-post"> Проект LAB </h2>
         <p class="post-about"> Маркетинг </p>
-          </li>
-    <li><a href=""><img src="./Images/growing.jpg" alt="growing" width="370" height="294" /></a>
-      <h2 class="name-post"> Growing Business </h2>
+      </li>
+      <li class="list"><a href=""><img src="./Images/growing.jpg" alt="growing" width="370" height="294" /></a>
+        <h2 class="name-post"> Growing Business </h2>
         <p class="post-about"> Аплікація </p>
-          </li>
-  </ul>
+      </li>
+    </ul>
+</div>
+
 </section>
 
 
