@@ -37,6 +37,9 @@ margin: 0px;
 
 .footer-background{
   background: #2F303A;
+  width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* div/ container */
