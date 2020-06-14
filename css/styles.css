@@ -625,6 +625,15 @@ color: var(--primary-white-color);
   text-decoration: none;
 }
 
+.flex-button .list{
+  margin-right: 8px;
+}
+
+.flex-button .list:last-child{
+  margin-right: 0px;
+}
+
+
 .button-radio:hover,
 .button-radio:focus{
   color: var(--accent-color);
@@ -687,9 +696,7 @@ color: var(--primary-white-color);
   justify-content: center;
 }
 
-.flex-button.list{
-  min-width: 100px;
-}
+
 
 /* -----two section portfolio   */
 
@@ -706,7 +713,7 @@ color: var(--primary-white-color);
 /* -----calc((100%-(30*(n-1)))/n)*/
 
 .flex-style .list{
-  width: 370px;
+  width:370px;
   margin-right: 30px;
 }
 
