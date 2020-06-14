@@ -18,12 +18,6 @@ html {
   --font-logo: 'Raleway',sans-serif;
 }
 
-/* ------------body-*-------------------- */
-body {
- }
-
-/* -----------------------end body------------------> */
-
 /* відключає стилі UL */
 .ul-style{
   list-style: none;
@@ -54,15 +48,8 @@ margin-left: auto;
 padding-right: 15px;
 padding-left: 15px;
 
-
-
-
 }
-
-
-
 /* ------end / container */
-
 /* logo */
 
 
@@ -84,13 +71,6 @@ color:var(--title-text-color);
 .logo .logo-footer{
   color:var(--primary-white-color) ;
 }
-
-/* .logo-black {
-color:var(--title-text-color);
-} */
-
-
-
 
 /* site-nav */
 /* -----start   main navigation------------------------ */
@@ -122,13 +102,12 @@ color:var(--title-text-color);
 
 /* site-nav flex-navigator */
 .flex-navigator{
-display: flex;
-margin-left: 85px;
+  display: flex;
+  margin-left: 85px;
 }
 
 
 /* margin-right: 50px; */
-
 /* перший варіант */
 /* .flex-link:last-child{
   margin-right:0px;
@@ -144,19 +123,11 @@ margin-left: 85px;
 .flex-navigator .flex-link + .flex-link{
   margin-left: 50px;
 }
-
 /* -----end main navigation------------------------ */
-
-
-
-
 
 
 /* address header */
 /* -------start address----- */
-
-
-
 .flex-nav{
   display: flex;
   align-items: center;
@@ -194,9 +165,7 @@ margin-left: 85px;
 
 .flex-address .link + .link{
   margin-left: 50px;
-
 }
-
 /* ------finish address------------- */
 
 
@@ -235,7 +204,7 @@ margin-left: 85px;
   margin-top: 30px;
   border: 1px solid transparent;
   min-width: 200px;
-   color:var(--primary-white-color);
+  color:var(--primary-white-color);
   background: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
@@ -243,8 +212,7 @@ margin-left: 85px;
   text-decoration: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  
-}
+ }
 
 
 .hero .button:hover,
@@ -284,8 +252,6 @@ margin-left: 85px;
 }
 
 
-
-
 .subtitle{
   font-family: Roboto;
   font-style: normal;
@@ -315,7 +281,6 @@ margin-left: 85px;
   padding-bottom: 188px;
 }
 
-
 .it-work .flex{
   display: flex;
 }
@@ -331,16 +296,11 @@ margin-left: 85px;
 
 /* ----------------------------- */
 
-
-
-
-
 /* Чим ми займаємось */
 
 .we-work{
   display: flex;
 }
-
 
 .we-work .list{
   width: 370px;
@@ -353,21 +313,19 @@ margin-left: 85px;
   margin-right: 0px;
 }
 
-
-
 .name-work{
   padding: 27px 82px;
   background: rgba(47, 48, 58, 0.8);
- text-align: center;
+  text-align: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
-   letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);;
-}
+  }
 /* -------------------------------- */
 
 /* Наша команда */
@@ -414,7 +372,6 @@ margin-left: 85px;
   margin-bottom: 54px;
 }
 
-
 .teams{
   width: 270px;
   display: flex;
@@ -427,31 +384,23 @@ margin-left: 85px;
 .teams .iteam:last-child{
   margin-right: 0px;
 }
-
-
 /* ----------------------- */
 
 
 /* постійні клієнти */
 
-/* .custumers{
-padding: 94px;
-} */
-
-
 
 .regular-custumers{
 display: inline-block;  
-background: #FFFFFF;
-min-width: 170px;
-height: 90px;
-padding: 30px;
-text-align: center;
-border: 1px solid #AFB1B8;
-border-radius: 4px;
+  background: #FFFFFF;
+  min-width: 170px;
+  height: 90px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
 margin-top: 50px;
 }
-
 
 .regular-custumers:hover,
 .regular-custumers:focus{
@@ -477,34 +426,26 @@ margin-top: 50px;
   margin-right: 0;
 }
 
-
-
-
 /* -------------------------- */
 
 /* footer */
-
-
-
-
 .address-footer .address{
   margin-right: 0px;
 }
 
 .address-street{
-font-family: Roboto;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71 ;
-letter-spacing: 0.03em;
-color: var(--primary-white-color);
-
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71 ;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
 }
 
 .address-footer a {
   display: block;
- margin-top: 9px;
+  margin-top: 9px;
   color:var(--secondary-color);
   
   font-family:var(--font-text);
@@ -520,11 +461,6 @@ color: var(--primary-white-color);
 .address-footer a:focus {
  color:var(--accent-color);
 }
-
-
-
-
-
 /* ----------------------------------- */
 
 /* Join */
@@ -543,7 +479,6 @@ color: var(--primary-white-color);
   
 }
 /* ------------------------------------- */
-
 /* end */
 
 .container .end{
@@ -567,7 +502,6 @@ color: var(--primary-white-color);
 /* ---------------------end index.html */
 
 
-
 .footer-flex{
   display:flex;
   padding-bottom: 28px;
@@ -577,36 +511,15 @@ color: var(--primary-white-color);
   flex-direction: column;
 }
 
-
 .column.one .logo{
   display: block;
   padding-top: 48px;
   padding-bottom: 10px;
-
 }
 
 .column.two{
   margin-left: 69px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -633,12 +546,10 @@ color: var(--primary-white-color);
   margin-right: 0px;
 }
 
-
 .button-radio:hover,
 .button-radio:focus{
   color: var(--accent-color);
 }
-
 
  .name-post{
   font-family: Roboto;
@@ -650,16 +561,14 @@ color: var(--primary-white-color);
   color: var(--primary-text-color);
  }
 
-
  .post-about{
-   font-family: Roboto;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-
  }
 
  .kryak{
@@ -673,18 +582,13 @@ color: var(--primary-white-color);
   color: #FFFFFF;
  }
 
-
-
 /* -------------***flex***------------- */
 
 /* -----footer portfolio---- */
-
 /* ---of h1 portfolio */
-
 .off{
   display: none;
 }
-
 
 /* ----first section portfolio */
 .container.bottons{
@@ -695,7 +599,6 @@ color: var(--primary-white-color);
   display: flex;
   justify-content: center;
 }
-
 
 
 /* -----two section portfolio   */
