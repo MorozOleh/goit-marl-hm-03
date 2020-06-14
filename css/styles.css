@@ -320,7 +320,7 @@ margin-left: 85px;
   display: flex;
 }
 
-.list{
+.flex .list{
   margin-right: 30px;
   width: 270px;
 }
@@ -349,7 +349,7 @@ margin-left: 85px;
   padding-bottom: 188px;
 } 
 
-.we-work.list:last-child{
+.we-work .list:last-child{
   margin-right: 0px;
 }
 
@@ -416,14 +416,17 @@ margin-left: 85px;
 
 
 .teams{
-  display: flex;
- 
-}
-
-.teams .list{
   width: 270px;
+  display: flex;
 }
 
+.teams .iteam{
+  margin-right: 30px;
+}
+
+.teams .iteam:last-child{
+  margin-right: 0px;
+}
 
 
 /* ----------------------- */
@@ -466,11 +469,11 @@ margin-top: 50px;
 
 }
 
-.clients.list{
+.clients .list{
   margin-right: 30px;
 }
 
-.clients.clients.list:last-child{
+.clients .list:last-child{
   margin-right: 0;
 }
 
@@ -579,6 +582,11 @@ color: var(--primary-white-color);
   display: block;
   padding-top: 48px;
   padding-bottom: 10px;
+
+}
+
+.column.two{
+  margin-left: 69px;
 }
 
 
@@ -676,8 +684,12 @@ color: var(--primary-white-color);
 
 .flex-button{
   display: flex;
+  justify-content: center;
 }
 
+.flex-button.list{
+  min-width: 100px;
+}
 
 /* -----two section portfolio   */
 
@@ -691,11 +703,11 @@ color: var(--primary-white-color);
   flex-wrap: wrap;
 }
 
+/* -----calc((100%-(30*(n-1)))/n)*/
+
 .flex-style .list{
   width: 370px;
   margin-right: 30px;
-  margin-top: 30;
-  margin-bottom: 30px;
 }
 
 .flex-style .list:nth-child(3n){
