@@ -80,6 +80,9 @@ font-style: normal ;
 color:var(--title-text-color);
 }
 
+.logo .logo-footer{
+  color:var(--primary-white-color) ;
+}
 
 /* .logo-black {
 color:var(--title-text-color);
@@ -444,6 +447,11 @@ margin-top: 50px;
 /* -------------------------- */
 
 /* footer */
+
+.address-footer .address{
+  margin-right: 0px;
+}
+
 .address-street{
 font-family: Roboto;
 font-style: normal;
@@ -452,12 +460,39 @@ font-size: 14px;
 line-height: 1.71 ;
 letter-spacing: 0.03em;
 color: var(--primary-white-color);
-background: var(--primary-text-color);
+
 }
+
+.address-footer a {
+  display: block;
+ margin-top: 9px;
+  color:var(--secondary-color);
+  
+  font-family:var(--font-text);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.address-footer a:hover,
+.address-footer a:focus {
+ color:var(--accent-color);
+}
+
+
+
+
+
 /* ----------------------------------- */
 
 /* Join */
 .join{
+  display: block;
+  padding-top: 56px;
+  padding-bottom: 21px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -491,8 +526,16 @@ background: var(--primary-text-color);
   display: flex;
 }
 
+.footer-flex .column{
+  flex-direction: column;
+}
 
 
+.column.one .logo{
+  display: block;
+  padding-top: 48px;
+  padding-bottom: 10px;
+}
 
 
 
@@ -604,3 +647,6 @@ background: var(--primary-text-color);
   margin-right: 0px;
 }
 
+.flex-style .list:nth-last-child(-n + 3){
+  margin-bottom: 94px;
+}
