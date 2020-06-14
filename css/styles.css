@@ -713,7 +713,7 @@ color: var(--primary-white-color);
 /* -----calc((100%-(30*(n-1)))/n)*/
 
 .flex-style .list{
-  width:370px;
+  width:calc((100% - 60px)/3);
   margin-right: 30px;
 }
 
