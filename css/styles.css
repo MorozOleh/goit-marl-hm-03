@@ -53,7 +53,8 @@ margin-right: auto;
 margin-left: auto;
 padding-right: 15px;
 padding-left: 15px;
-outline: 2px solid red;
+
+
 
 
 }
@@ -376,17 +377,23 @@ margin-left: 85px;
   letter-spacing: 0.03em;
   font-size: 16px;
   line-height: 1.19;
+  
 }
 
 .worker {
+  margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
   color: var(--primary-text-color);
+  text-align: center;
 }
 
 .profession {
+  margin-top: 10px;
+  margin-bottom: 16px;
   font-weight: 400;
   color: var(--secondary-color);
+  text-align: center;
 }
 
 .icons{
@@ -400,16 +407,33 @@ margin-left: 85px;
 }
 
 .container-teams{
+  padding-bottom: 92px;
+}
+
+.container-teams h2{
+  margin-bottom: 54px;
+}
+
+
+.teams{
   display: flex;
+ 
 }
 
 .teams .list{
   width: 270px;
 }
+
+
+
 /* ----------------------- */
 
 
 /* постійні клієнти */
+
+/* .custumers{
+padding: 94px;
+} */
 
 
 
@@ -431,10 +455,15 @@ margin-top: 50px;
   color: var(--accent-color);
 }
 
+.custumers {
+  padding-top: 94px;
+  padding-bottom: 94px ;
+}
+
 
 .clients{
   display: flex;
-  padding-bottom: 99px;
+
 }
 
 .clients.list{
@@ -444,9 +473,16 @@ margin-top: 50px;
 .clients.clients.list:last-child{
   margin-right: 0;
 }
+
+
+
+
 /* -------------------------- */
 
 /* footer */
+
+
+
 
 .address-footer .address{
   margin-right: 0px;
@@ -506,6 +542,14 @@ color: var(--primary-white-color);
 /* ------------------------------------- */
 
 /* end */
+
+.container .end{
+  
+  padding-top:  18px;
+  padding-bottom: 21px;
+
+}
+
 .end {
   font-family: Roboto;
   font-style: normal;
@@ -522,8 +566,8 @@ color: var(--primary-white-color);
 
 
 .footer-flex{
-
-  display: flex;
+  display:flex;
+  padding-bottom: 28px;
 }
 
 .footer-flex .column{
@@ -616,25 +660,46 @@ color: var(--primary-white-color);
 
 /* -------------***flex***------------- */
 
+/* -----footer portfolio---- */
+
+/* ---of h1 portfolio */
+
 .off{
   display: none;
 }
 
 
-.flex-button{
-  display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
+/* ----first section portfolio */
+.container.bottons{
+  padding-top: 94px;
 }
 
 
 
 
+
+
+
+.flex-button{
+  display: flex;
+}
+
+
+
+
+
+/* -----two section portfolio   */
+
+.container.portfolio{
+  padding-top: 34px;
+  padding-bottom: 94px;
+}
 
 .flex-style{
   display: flex;
   flex-wrap: wrap;
 }
+
 .flex-style .list{
   width: 370px;
   margin-right: 30px;
@@ -648,5 +713,5 @@ color: var(--primary-white-color);
 }
 
 .flex-style .list:nth-last-child(-n + 3){
-  margin-bottom: 94px;
+  margin-bottom: 0;
 }
