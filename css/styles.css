@@ -402,16 +402,10 @@ margin-bottom: 188px;
 /* постійні клієнти */
 
 
-.regular-custumers{
+/* .regular-custumers{
   display: inline-block;  
   background: #FFFFFF;
-  min-width: 170px;
-  height: 90px;
-  padding: 30px;
-  text-align: center;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
-}
+} */
 
 .regular-custumers:hover,
 .regular-custumers:focus{
