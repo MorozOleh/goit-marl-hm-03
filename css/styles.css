@@ -37,7 +37,7 @@ margin:0px;
 
 .footer-background{
   background: #2F303A;
-  width: 1600px;
+  max-width:1600px ;
   margin-right: auto;
   margin-left: auto;
 }
@@ -51,7 +51,7 @@ margin-left: auto;
 padding-right: 15px;
 padding-left: 15px;
 
-background-color: palegreen;
+
 
 }
 /* ------end / container */
@@ -481,7 +481,7 @@ margin-bottom: 188px;
 .join{
   display: block;
   padding-top: 56px;
-  padding-bottom: 21px;
+  margin-bottom: 21px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -496,6 +496,8 @@ margin-bottom: 188px;
 /* end */
 
 .container .end{
+  margin-right: auto;
+  margin-left: auto;
   
   padding-top:  18px;
   padding-bottom: 21px;
@@ -520,6 +522,7 @@ margin-bottom: 188px;
 
 .footer-flex{
   display:flex;
+  align-items: baseline;
   margin-bottom: 28px;
 }
 
@@ -529,8 +532,7 @@ margin-bottom: 188px;
 
 .column.one .logo{
   display: block;
-  margin-top: 48px;
-  margin-bottom: 10px;
+
 }
 
 .column.two{
