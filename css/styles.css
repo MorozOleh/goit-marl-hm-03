@@ -533,9 +533,11 @@ margin-bottom: 188px;
 .column.one{
   display: block;
   margin-top: 48px;
-  margin-bottom: 10px;
 }
 
+.column.one .address-footer{
+  margin-top: 10px;
+}
 .column.one .list{
   margin-bottom: 9px;
 }
