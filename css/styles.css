@@ -249,14 +249,15 @@ color:var(--title-text-color);
 
 
 .image {
-  margin-top: 94px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 55px;
 
-  background: #F5F4FA;
+}
+ /* background: #F5F4FA;
   border: 1px solid transparent;
   border-radius: 4px;
-  margin-bottom: 30px;
-}
-
+  margin-bottom: 30px; */
 
 .subtitle{
   font-family: Roboto;
