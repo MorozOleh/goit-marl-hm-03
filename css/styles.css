@@ -530,10 +530,22 @@ margin-bottom: 188px;
   flex-direction: column;
 }
 
-.column.one .logo{
+.column.one{
   display: block;
-
+  margin-top: 48px;
+  margin-bottom: 10px;
 }
+
+.column.one .list{
+  margin-bottom: 9px;
+}
+
+.column.one .list:last-child{
+  margin-bottom: 0px;
+}
+
+
+
 
 .column.two{
   margin-left: 69px;
