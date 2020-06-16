@@ -21,7 +21,7 @@
 }
 
 body{
-  background: yellow;
+  background: var(--primary-white-color);
 }
 
 /* Змінна стилів в list */
@@ -54,8 +54,6 @@ h1,h2,h3,h4,h5,h6,p{
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-
-  background:skyblue;
 }
 /* ------end / container */
 
@@ -243,6 +241,9 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* section how it work */
 
+.container.it-work{
+  padding-top: 94px;
+}
 
 .it-work .title{
   display: none;
@@ -404,7 +405,6 @@ h1,h2,h3,h4,h5,h6,p{
   margin-right: 0px;
 }
 
-
 .worker {
   margin-top: 30px;
   font-weight: 500;
@@ -432,34 +432,40 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 
-/* ----------------------- */
+/* -------------End - Teams ------- */
 
 
 /* постійні клієнти */
 
+.container.custumers{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
-/* .regular-custumers{
-  display: inline-block;  
-  background: #FFFFFF;
-} */
+.custumers .title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em; 
+  color: var(--primary-text-color);
+  margin-bottom: 50px;
+}
 
 .regular-custumers:hover,
 .regular-custumers:focus{
   color: var(--accent-color);
 }
 
-.section-title.three{
+.custumers-title{
   margin-bottom: 50px;
-}
-
-.container.custumers {
-margin-bottom: 188px;  
 }
 
 
 .clients{
   display: flex;
-
 }
 
 .clients .list{
@@ -470,9 +476,17 @@ margin-bottom: 188px;
   margin-right: 0;
 }
 
+
+
 /* -------------------------- */
 
+
+
+
 /* footer */
+
+
+
 .address-footer .address{
   margin-right: 0px;
 }
@@ -510,7 +524,6 @@ margin-bottom: 188px;
 /* Join */
 .join{
   display: block;
-  padding-top: 56px;
   margin-bottom: 21px;
   font-family: Roboto;
   font-style: normal;
@@ -523,32 +536,8 @@ margin-bottom: 188px;
   
 }
 /* ------------------------------------- */
-/* end */
 
-.container .end{
-  margin-right: auto;
-  margin-left: auto;
-  
-  padding-top:  18px;
-  padding-bottom: 21px;
 
-}
-
-.end {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 2;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.4);
-  
-}
-/* ---------------------end index.html */
-.flex-nav.portfolio{
-  margin-bottom: 93px;
-}
 
 .footer-flex{
   display:flex;
@@ -560,10 +549,11 @@ margin-bottom: 188px;
   flex-direction: column;
 }
 
-.column.one{
-  display: block;
-  margin-top: 48px;
+
+. .logo{
+  padding-top: 52px;
 }
+
 
 .column.one .address-footer{
   margin-top: 10px;
@@ -576,9 +566,6 @@ margin-bottom: 188px;
   margin-bottom: 0px;
 }
 
-
-
-
 .column.two{
   margin-left: 69px;
 }
@@ -586,8 +573,30 @@ margin-bottom: 188px;
 
 
 
+
+
+
+
+
+
+
+
 /* start portfolio.html */
 /* portfolio */
+
+.off{
+  display: none;
+}
+
+.flex-button{
+  display: flex;
+  justify-content: center;
+}
+
+.container.bottons{
+  padding-top: 93px;
+}
+
 .button-radio{
   background: #f5f4fa;
   color: var(--primary-text-color);
@@ -611,6 +620,18 @@ margin-bottom: 188px;
 .button-radio:hover,
 .button-radio:focus{
   color: var(--accent-color);
+}
+
+/* ----------portfolio------------- */
+
+.container.portfolio{
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+
+.flex-style{
+  display: flex;
+  flex-wrap: wrap;
 }
 
  .name-post{
@@ -644,35 +665,11 @@ margin-bottom: 188px;
   color: #FFFFFF;
  } */
 
-/* -------------***flex***------------- */
-
-/* -----footer portfolio---- */
-/* ---of h1 portfolio */
-.off{
-  display: none;
-}
-
-/* ----first section portfolio */
-.container.bottons{
-  margin-bottom: 50px ;
-}
-
-.flex-button{
-  display: flex;
-  justify-content: center;
-}
-
 
 /* -----two section portfolio   */
-.container.two-section{
-  margin-bottom: 94px;
 
-}
 
-.flex-style{
-  display: flex;
-  flex-wrap: wrap;
-}
+
 
 /* -----calc((100%-(30*(n-1)))/n)*/
 
@@ -694,3 +691,33 @@ margin-bottom: 188px;
 .flex-style .list:nth-child(-n + 3){
   margin-top: 0px;
 }
+
+
+
+
+
+
+
+/* end */
+
+.container .copy-right{
+  margin-right: auto;
+  margin-left: auto;
+  
+  padding-top:  18px;
+  padding-bottom: 21px;
+
+}
+
+.copy-right {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.4);
+  
+}
+/* ---------------------end index.html */
