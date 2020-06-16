@@ -45,37 +45,40 @@ margin:0px;
 /* div/ container */
 
 .container {
-width: 1200px;
+width: 1170px;
 margin-right: auto;
 margin-left: auto;
 padding-right: 15px;
 padding-left: 15px;
 
-
-
+background:skyblue;
 }
 /* ------end / container */
+
+
 /* logo */
 
-
 .logo {
-text-decoration:none ;
-color:var(--accent-color);
-text-decoration:none;
-font-family:var(--font-logo);
-font-size: 26px;
-font-weight: bold;
-line-height: 1.19;
-font-style: normal ;
+  text-decoration:none ;
+  color:var(--title-text-color);
+  text-decoration:none;
+  font-family:var(--font-logo);
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.19;
+  font-style: normal ;
 }
 
-.logo > span{
-color:var(--title-text-color);
+.logo .accent{
+  color:var(--accent-color);
 }
 
-.logo .logo-footer{
-  color:var(--primary-white-color) ;
+.logo .inverse{
+  color:var(--primary-white-color);
 }
+
+/* ------------------end logo------------------ */
+
 
 /* site-nav */
 /* -----start   main navigation------------------------ */
