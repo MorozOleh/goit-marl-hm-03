@@ -256,20 +256,18 @@ h1,h2,h3,h4,h5,h6,p{
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em; 
-  color: var(--primary-text-color)
+  color: var(--primary-text-color);
+ 
 }
 /* --------------------- */
 
 
-.it-work.image {
-  text-align: center;
-  margin-bottom: 55px;
-}
- /* background: #F5F4FA;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  margin-bottom: 30px; */
 
+/* .it-work.image {
+  text-align: center;
+  
+} */
+ 
 .it-work .subtitle{
   font-family: Roboto;
   font-style: normal;
@@ -291,13 +289,9 @@ h1,h2,h3,h4,h5,h6,p{
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-  margin: 0px;
   width: 270px;
 }
 
-.it-work {
-  padding-top: 94px;
-}
 
 .it-work .flex{
   display: flex;
@@ -313,6 +307,12 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 /* ----------------------------- */
+
+
+
+
+
+
 
 /* Чим ми займаємось */
 .container.do-work{
@@ -332,14 +332,12 @@ h1,h2,h3,h4,h5,h6,p{
   text-align: center;
   letter-spacing: 0.03em; 
   color: var(--primary-text-color);
-
   margin-bottom: 50px;
 }
 
 
 .we-work .list{
   width: 370px;
- 
   margin-right: 30px;
 } 
 
@@ -362,16 +360,50 @@ h1,h2,h3,h4,h5,h6,p{
   }
 /* -------------------------------- */
 
-/* Наша команда */
 
-.our-team {
- font-family:var(--font-text);
+
+
+/* ------our-teams------- */
+
+/* .our-team {
+  font-family:var(--font-text);
   font-style: normal;
   letter-spacing: 0.03em;
   font-size: 16px;
   line-height: 1.19;
   
+} */
+
+
+.container-teams{
+  padding-top: 94px;
 }
+
+.container-teams .title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em; 
+  color: var(--primary-text-color);
+  margin-bottom: 50px;
+}
+
+.container-teams .teams{
+  width: 270px;
+  display: flex;
+}
+
+.teams .iteam{
+  margin-right: 30px;
+}
+
+.teams .iteam:last-child{
+  margin-right: 0px;
+}
+
 
 .worker {
   margin-top: 30px;
@@ -399,26 +431,7 @@ h1,h2,h3,h4,h5,h6,p{
   color: var(--accent-color)
 }
 
-.container-teams{
-margin-bottom: 188px;
-}
 
-.container-teams h2{
-  margin-bottom: 54px;
-}
-
-.teams{
-  width: 270px;
-  display: flex;
-}
-
-.teams .iteam{
-  margin-right: 30px;
-}
-
-.teams .iteam:last-child{
-  margin-right: 0px;
-}
 /* ----------------------- */
 
 
