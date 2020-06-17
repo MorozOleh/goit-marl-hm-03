@@ -20,6 +20,10 @@
   --font-logo: 'Raleway',sans-serif;
 }
 
+img{
+  display: block;
+}
+
 body{
   background: var(--primary-white-color);
 }
@@ -54,6 +58,7 @@ h1,h2,h3,h4,h5,h6,p{
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+
 }
 /* ------end / container */
 
@@ -72,11 +77,11 @@ h1,h2,h3,h4,h5,h6,p{
   font-style: normal ;
 }
 
-.logo .accent{
+ .logo-accent{
   color:var(--accent-color);
 }
 
-.logo .inverse{
+.logo.inverse{
   color:var(--primary-white-color);
 }
 
@@ -110,10 +115,11 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 /* ---- навігатор-флекс */
-.flex-nav{
+.container > .flex-nav{
   display: flex;
   align-items: center;
 }
+
 
 /* -------------------- */
 
@@ -126,26 +132,6 @@ h1,h2,h3,h4,h5,h6,p{
   margin-left: 50px;
 }
 
-/* ------end main navigator----- */
-
-/* margin-right: 50px; */
-/* перший варіант */
-/* .flex-link:last-child{
-  margin-right:0px;
-} */
-
-
-/* другий варіант відступу */
-/* .flex-navigator .flex-link:not(:last-child) {
-  margin-right: 50px;
-} */
-
-/* thirth variant old school*/
-
-/* -----end main navigation------------------------ */
-
-
-/* address header */
 /* -------start address----- */
 
 
@@ -174,14 +160,22 @@ h1,h2,h3,h4,h5,h6,p{
   margin-left: auto;
 }
 
-.address{
+.address {
   display: flex;
 }
 
-.address .link + .link{
+.address > .link + .link{
   margin-left: 50px;
 }
 /* ------finish address------------- */
+
+
+
+
+
+
+
+
 
 
 /* main section */
@@ -191,6 +185,8 @@ h1,h2,h3,h4,h5,h6,p{
   background: green;
   width: 1600px;
   height: 600px;
+  margin-right: auto;
+  margin-left: auto;
 
 }
 
@@ -203,19 +199,18 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 
-.hero .title { 
- 
+.hero > .title { 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36 ;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 
 .hero .button {
   display: inline-block;
   padding: 10px 32px;
-  margin-top: 30px;
   border: 1px solid transparent;
   min-width: 200px;
   color:var(--primary-white-color);
@@ -239,17 +234,16 @@ h1,h2,h3,h4,h5,h6,p{
 
 
 
+
+
 /* section how it work */
 
 .container.it-work{
   padding-top: 94px;
 }
 
-.it-work .title{
+.it-work > .title{
   display: none;
-}
-
-.it-work .title {
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -263,12 +257,6 @@ h1,h2,h3,h4,h5,h6,p{
 /* --------------------- */
 
 
-
-/* .it-work.image {
-  text-align: center;
-  
-} */
- 
 .it-work .subtitle{
   font-family: Roboto;
   font-style: normal;
@@ -303,11 +291,21 @@ h1,h2,h3,h4,h5,h6,p{
   width: 270px;
 }
 
-.list:last-child{
+.flex .list:last-child{
   margin-right: 0px;
 }
 
-/* ----------------------------- */
+.image{
+  margin-bottom: 55px;
+}
+
+.subtitle{
+  margin-bottom: 10px;
+}
+
+/* --------end section It-work----------- */
+
+
 
 
 
@@ -320,11 +318,9 @@ h1,h2,h3,h4,h5,h6,p{
   padding-top: 94px ;
 }
 
-.do-work .we-work{
-  display: flex;
-}
 
-.do-work .title {
+
+.do-work > .title {
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -334,6 +330,10 @@ h1,h2,h3,h4,h5,h6,p{
   letter-spacing: 0.03em; 
   color: var(--primary-text-color);
   margin-bottom: 50px;
+}
+
+.do-work .we-work{
+  display: flex;
 }
 
 
@@ -366,21 +366,18 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* ------our-teams------- */
 
-/* .our-team {
-  font-family:var(--font-text);
-  font-style: normal;
-  letter-spacing: 0.03em;
-  font-size: 16px;
-  line-height: 1.19;
-  
-} */
 
 
 .container-teams{
   padding-top: 94px;
 }
 
-.container-teams .title {
+.container-teams .teams{
+  display: flex;
+}
+
+
+.container-teams > .title {
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -392,16 +389,11 @@ h1,h2,h3,h4,h5,h6,p{
   margin-bottom: 50px;
 }
 
-.container-teams .teams{
-  width: 270px;
-  display: flex;
-}
-
-.teams .iteam{
+.teams > .iteam{
   margin-right: 30px;
 }
 
-.teams .iteam:last-child{
+.teams > .iteam:last-child{
   margin-right: 0px;
 }
 
@@ -415,10 +407,13 @@ h1,h2,h3,h4,h5,h6,p{
 
 .profession {
   margin-top: 10px;
-  margin-bottom: 16px;
   font-weight: 400;
   color: var(--secondary-color);
   text-align: center;
+}
+
+.teams .social{
+  margin-top: 16px;
 }
 
 .icons{
@@ -442,7 +437,7 @@ h1,h2,h3,h4,h5,h6,p{
   padding-bottom: 94px;
 }
 
-.custumers .title {
+.custumers > .title {
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -480,95 +475,6 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* -------------------------- */
 
-
-
-
-/* footer */
-
-
-
-.address-footer .address{
-  margin-right: 0px;
-}
-
-.address-street{
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71 ;
-  letter-spacing: 0.03em;
-  color: var(--primary-white-color);
-}
-
-.address-footer a {
-  display: block;
-  margin-top: 9px;
-  color:var(--secondary-color);
-  
-  font-family:var(--font-text);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
-
-.address-footer a:hover,
-.address-footer a:focus {
- color:var(--accent-color);
-}
-/* ----------------------------------- */
-
-/* Join */
-.join{
-  display: block;
-  margin-bottom: 21px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  
-}
-/* ------------------------------------- */
-
-
-
-.footer-flex{
-  display:flex;
-  align-items: baseline;
-  margin-bottom: 28px;
-}
-
-.footer-flex .column{
-  flex-direction: column;
-}
-
-
-. .logo{
-  padding-top: 52px;
-}
-
-
-.column.one .address-footer{
-  margin-top: 10px;
-}
-.column.one .list{
-  margin-bottom: 9px;
-}
-
-.column.one .list:last-child{
-  margin-bottom: 0px;
-}
-
-.column.two{
-  margin-left: 69px;
-}
 
 
 
@@ -622,6 +528,8 @@ h1,h2,h3,h4,h5,h6,p{
   color: var(--accent-color);
 }
 
+
+
 /* ----------portfolio------------- */
 
 .container.portfolio{
@@ -629,12 +537,22 @@ h1,h2,h3,h4,h5,h6,p{
   padding-bottom: 94px;
 }
 
+.flex-style a{
+  display: block;
+  text-decoration: none;
+}
+
 .flex-style{
   display: flex;
   flex-wrap: wrap;
 }
 
+.card{
+  margin-bottom: 20px;
+}
+
  .name-post{
+  margin-bottom: 4px; 
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -645,6 +563,7 @@ h1,h2,h3,h4,h5,h6,p{
  }
 
  .post-about{
+   padding-bottom: 20px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -694,25 +613,96 @@ h1,h2,h3,h4,h5,h6,p{
 
 
 
+/* footer */
 
+.footer-flex{
+  display:flex;
+  align-items: baseline;
+  padding-top: 45px;
+  padding-bottom: 28px;
+}
+
+.column.one > a{
+  display: block;
+  margin-bottom: 8px;
+}
+
+.column.one .list{
+  margin-bottom: 9px;
+}
+
+.column.one .list:last-child{
+  margin-bottom: 0px;
+}
+
+
+.column.two{
+  margin-left: 69px;
+}
+
+
+
+.address-street{
+  font-family: var(--font-text);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71 ;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+
+.address-footer a {
+  display: block;
+  color:var(--secondary-color);
+  font-family:var(--font-text);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.address-footer a:hover,
+.address-footer a:focus {
+ color:var(--accent-color);
+}
+/* ----------------------------------- */
+
+/* Join */
+.join{
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  
+}
+/* ------------------------------------- */
 
 
 
 /* end */
 
-.container .copy-right{
+
+.copyright {
+  display: block;
   margin-right: auto;
   margin-left: auto;
   
   padding-top:  18px;
   padding-bottom: 21px;
+ border-top: 1px solid rgba(255, 255, 255, 0.1);
 
-}
 
-.copy-right {
-  font-family: Roboto;
+  font-family: var(--font-text);
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 2;
   text-align: center;
@@ -721,3 +711,9 @@ h1,h2,h3,h4,h5,h6,p{
   
 }
 /* ---------------------end index.html */
+
+
+
+
+
+
