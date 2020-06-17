@@ -115,12 +115,17 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 /* ---- навігатор-флекс */
+
+
+
 .container > .flex-nav{
   display: flex;
   align-items: center;
 }
 
-
+.container-address{
+  display: flex;
+}
 /* -------------------- */
 
 .site-nav{
@@ -159,7 +164,6 @@ h1,h2,h3,h4,h5,h6,p{
 .for-margin{
   margin-left: auto;
 }
-
 .address {
   display: flex;
 }
@@ -316,6 +320,7 @@ h1,h2,h3,h4,h5,h6,p{
 /* Чим ми займаємось */
 .container.do-work{
   padding-top: 94px ;
+  padding-bottom: 94px;
 }
 
 
@@ -370,6 +375,8 @@ h1,h2,h3,h4,h5,h6,p{
 
 .container-teams{
   padding-top: 94px;
+  padding-bottom: 94px;
+  background: #F5F4FA;
 }
 
 .container-teams .teams{
